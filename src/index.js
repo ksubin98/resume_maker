@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.module.css';
+import './index.css';
 import App from './app';
-import AuthService from './service/auth_service';
 
-const authService = new AuthService();
 ReactDOM.render(
   <React.StrictMode>
-    <App authService={authService} />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
