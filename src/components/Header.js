@@ -17,7 +17,7 @@ export default Header;
 
 const Container = styled.div`
   display: flex;
-  position: absolute;
+  position: relative;
   background-color: #cfd8dc;
   justify-content: center;
   align-items: center;
