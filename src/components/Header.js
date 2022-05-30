@@ -1,13 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../img/resume.png';
+import logoutImg from '../img/logout.png';
 
-const Header = (props) => {
+const Header = ({logout}) => {
 
   return(
     <Container>
       <LogoImg src={logo}/>
       <Title>Resume Maker</Title>
+      {logout && (<Logout  src={logoutImg} onClick={logout}/>)}
     </Container>
 
   )
@@ -34,4 +36,12 @@ const LogoImg = styled.img`
 const Title = styled.div`
   font-size: 5rem;
   font-family: "Gill Sans", sans-serif;
+`;
+
+const Logout = styled.button`
+    position: absolute;
+    right: 0.5em;
+    padding: 0.8em;
+    width: 2rem;
+    cursor: point;
 `;
